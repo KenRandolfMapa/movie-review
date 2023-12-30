@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <title>kenMovie review</title>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo2.png" alt="Logo" /></a>
+        </div>
+        <nav>
+            <nav class="feature">
+                <a href="index.html">Home</a>
+                <select class="genre" id="genre">
+                    <option value="" selected disabled hidden>Genres</option>
+                    <option id="all" value="all">All</option>
+                    <option id="comedy" value="comedy">Comedy</option>
+                    <option id="series" value="series">Series</option>
+                    <option id="horror" value="horror">Horror</option>
+                    <option id="romance" value="romance">Romance</option>
+                </select>
+                <select class="language" id="language">
+                    <option value="english">English</option>
+                    <option value="tagalog">Tagalog</option>
+                </select>
+            </nav>
+            <input type="text" id="search" placeholder="Search...">
+            <button onclick="searchMovies()" id="searchs">Search</button>
+        </nav>
+    </header>
+    <main>
+        <div class="movie" id="movies"></div>
+        
+    </main>
+        <section>
+        </section>
+        <footer>
+            <p>© 2023 khen movies review</p>
+        </footer>
+        
+        <script type="module" src="js/api_key.js"></script>
+        <script type="module" src="js/index.js"></script>
+        <script type="module" src="js/language.js"></script>
+    </body>
+</html>
